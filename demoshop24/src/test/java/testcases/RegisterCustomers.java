@@ -21,7 +21,7 @@ public class RegisterCustomers extends Base {
 	
 	
 	@Test(dataProvider="registrationTDProvider", priority = 1)
-	public void fullSuccesRegistrationFlow(RegistrationDataModel registrationDataModel) throws Exception
+	public void fullRegistrationFlow(RegistrationDataModel registrationDataModel) throws Exception
 	{
 
 		String fullName= registrationDataModel.getFirstName()+" "+registrationDataModel.getLastName();
