@@ -54,13 +54,13 @@ public class RegisterCustomers extends Base {
 
 		if(confirmationScreen.fetchContentText().contains("Congratulations! Your new account has been successfully created!"))
 		{
-			eTest.log(LogStatus.PASS, fullName);
+			eTest.log(LogStatus.PASS,"Username: " + fullName);
 			eTest.log(LogStatus.PASS, "Successful Confirmation Message be shown Normally");
 			addScreenshots(fullName+" -"+" Confirmation Screen ","Success");
 		}
 		else
 		{
-			eTest.log(LogStatus.FAIL, fullName);
+			eTest.log(LogStatus.FAIL, "Username: " + fullName);
 			eTest.log(LogStatus.FAIL, "Successful Confirmation Message wasn't shown");
 			addScreenshots(fullName+" -"+" Confirmation Screen ","Fail");
 		}
